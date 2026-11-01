@@ -1,0 +1,294 @@
+
+/* ==============================
+   MYFIT PREMIUM UPLOAD CLOSET
+   Blush Pink • Ivory • Rose
+============================== */
+
+.upload-page {
+  min-height: 100vh;
+  padding-bottom: 50px;
+  background:
+    radial-gradient(ellipse at top left, #fff0f4 0%, transparent 38%),
+    #fff9fa;
+  color: #39252d;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.upload-navbar {
+  min-height: 82px;
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #f0dfe5;
+  box-shadow: 0 4px 20px rgba(104, 53, 72, 0.04);
+}
+
+.upload-logo {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #813b55;
+}
+
+.upload-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.upload-nav-links a {
+  text-decoration: none;
+  color: #70535e;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.upload-nav-links a:hover {
+  color: #b45d7b;
+}
+
+/* MAIN CONTAINER */
+
+.upload-container {
+  width: 650px;
+  max-width: 90%;
+  margin: 58px auto 70px;
+}
+
+/* PAGE HEADING */
+
+.upload-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.upload-heading p {
+  color: #a65370;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+.upload-heading h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 5vw, 44px);
+  line-height: 1.2;
+  font-weight: 500;
+  color: #482b38;
+  margin: 0 0 16px;
+}
+
+.upload-heading span {
+  display: block;
+  color: #806c75;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* UPLOAD FORM */
+
+.upload-form {
+  padding: 38px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #f0dce4;
+  border-radius: 20px;
+  box-shadow: 0 15px 45px rgba(104, 53, 72, 0.08);
+}
+
+.upload-form label {
+  display: block;
+  color: #583447;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.upload-form input,
+.upload-form select,
+.upload-form textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #ead9e0;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #492e3a;
+  margin: 0 0 22px;
+  outline: none;
+  background-color: #fffafb;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.upload-form input::placeholder,
+.upload-form textarea::placeholder {
+  color: #b39ca6;
+}
+
+.upload-form input:hover,
+.upload-form select:hover,
+.upload-form textarea:hover {
+  border-color: #dcb5c4;
+}
+
+.upload-form input:focus,
+.upload-form select:focus,
+.upload-form textarea:focus {
+  border-color: #b45d7b;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(180, 93, 123, 0.1);
+}
+
+.upload-form input[type="file"] {
+  padding: 12px;
+  cursor: pointer;
+  background: #fff4f7;
+}
+
+.upload-form input[type="file"]::file-selector-button {
+  padding: 9px 13px;
+  margin-right: 12px;
+  border: none;
+  border-radius: 7px;
+  background: #f0d8e1;
+  color: #813b55;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.upload-form textarea {
+  min-height: 115px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+/* SUBMIT BUTTON */
+
+.upload-form button {
+  width: 100%;
+  padding: 15px 20px;
+  margin-top: 5px;
+  border: 1px solid #813b55;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #91465f, #713349);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 7px 18px rgba(129, 59, 85, 0.16);
+  transition: all 0.25s ease;
+}
+
+.upload-form button:hover {
+  background: linear-gradient(135deg, #713349, #582438);
+  box-shadow: 0 10px 24px rgba(129, 59, 85, 0.23);
+  transform: translateY(-2px);
+}
+
+.upload-form button:active {
+  transform: translateY(0);
+}
+
+/* IMAGE PREVIEW */
+
+.image-preview {
+  width: 180px;
+  height: 220px;
+  margin: 12px 0 24px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #f9e6ec, #fff5f7);
+  border: 1px solid #f0d6e0;
+  box-shadow: 0 8px 22px rgba(104, 53, 72, 0.09);
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.image-preview:hover img {
+  transform: scale(1.04);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .upload-navbar {
+    min-height: 72px;
+    padding: 14px 5%;
+  }
+
+  .upload-logo {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+
+  .upload-nav-links {
+    display: none;
+  }
+
+  .upload-container {
+    width: auto;
+    max-width: 90%;
+    margin: 38px auto 50px;
+  }
+
+  .upload-heading {
+    margin-bottom: 28px;
+  }
+
+  .upload-heading h1 {
+    font-size: 34px;
+  }
+
+  .upload-heading span {
+    font-size: 13px;
+  }
+
+  .upload-form {
+    padding: 25px 20px;
+    border-radius: 16px;
+  }
+
+  .upload-form input,
+  .upload-form select,
+  .upload-form textarea {
+    padding: 13px;
+    font-size: 14px;
+  }
+
+  .image-preview {
+    width: 160px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 380px) {
+  .upload-heading h1 {
+    font-size: 30px;
+  }
+
+  .upload-form {
+    padding: 20px 16px;
+  }
+}

@@ -1,0 +1,447 @@
+
+/* ==============================
+   MYFIT PREMIUM PAYMENTS
+   Blush Pink • Ivory • Rose
+============================== */
+
+.payments-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top left, #fff0f4 0%, transparent 35%),
+    #fff9fa;
+  color: #39252d;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.payments-navbar {
+  min-height: 82px;
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #f0dfe5;
+  box-shadow: 0 4px 20px rgba(104, 53, 72, 0.04);
+}
+
+.payments-logo {
+  text-decoration: none;
+  color: #813b55;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  white-space: nowrap;
+}
+
+.payments-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.payments-nav-links a {
+  text-decoration: none;
+  color: #70535e;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.payments-nav-links a:hover {
+  color: #b45d7b;
+}
+
+/* PAGE HEADER */
+
+.payments-header {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 72px 20px 62px;
+  background:
+    radial-gradient(ellipse at 15% 20%, rgba(255,255,255,0.8), transparent 38%),
+    radial-gradient(ellipse at 85% 85%, rgba(237,190,205,0.32), transparent 35%),
+    linear-gradient(135deg, #f9e6ec 0%, #fff1f4 52%, #f5dfe7 100%);
+  border-bottom: 1px solid #f1dce4;
+}
+
+.payments-header p {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #a65370;
+  margin: 0 0 14px;
+}
+
+.payments-header h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 5vw, 54px);
+  line-height: 1.2;
+  font-weight: 500;
+  color: #482b38;
+  margin: 12px 0 17px;
+}
+
+.payments-header span {
+  display: inline-block;
+  color: #806571;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* PENDING PAYMENT BANNER */
+
+.pending-banner {
+  box-sizing: border-box;
+  width: 86%;
+  max-width: 1000px;
+  margin: 32px auto 28px;
+  padding: 26px 30px;
+  background: linear-gradient(135deg, #fff0f4, #fff8fa);
+  border: 1px solid #edcbd6;
+  border-left: 4px solid #b45d7b;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(104, 53, 72, 0.05);
+}
+
+.pending-banner h2 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #813b55;
+}
+
+.pending-banner p {
+  color: #806571;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* MAIN CONTAINER */
+
+.payments-container {
+  width: 86%;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+
+/* SUMMARY CARDS */
+
+.payment-summary-card {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 12px);
+  margin-right: 20px;
+  margin-bottom: 32px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #f0dfe5;
+  border-radius: 17px;
+  box-shadow: 0 8px 25px rgba(94, 45, 64, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.payment-summary-card:nth-of-type(even) {
+  margin-right: 0;
+}
+
+.payment-summary-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 13px 32px rgba(94, 45, 64, 0.09);
+}
+
+.payment-summary-card p,
+.section-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  line-height: 1.7;
+  color: #a65370;
+  text-transform: uppercase;
+}
+
+.payment-summary-card h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: #813b55;
+  margin: 12px 0 0;
+  overflow-wrap: anywhere;
+}
+
+/* TRANSACTIONS */
+
+.transactions-section {
+  margin-top: 8px;
+}
+
+.section-label {
+  margin: 0 0 18px;
+}
+
+.transaction-card {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #f0dfe5;
+  border-radius: 16px;
+  padding: 26px;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 7px 22px rgba(94, 45, 64, 0.04);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.transaction-card:hover {
+  border-color: #e6c2d0;
+  box-shadow: 0 11px 28px rgba(94, 45, 64, 0.08);
+}
+
+.pending-transaction {
+  border: 1px solid #e7bdcc;
+  background: linear-gradient(120deg, #ffffff, #fff5f8);
+}
+
+.transaction-type {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #a65370;
+  text-transform: uppercase;
+}
+
+.transaction-left {
+  min-width: 0;
+}
+
+.transaction-left h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #482b38;
+  overflow-wrap: anywhere;
+  margin: 9px 0;
+}
+
+.transaction-left p {
+  color: #806c75;
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+  margin: 5px 0;
+}
+
+.transaction-right {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.transaction-right h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #813b55;
+  margin: 0 0 14px;
+  overflow-wrap: anywhere;
+}
+
+.transaction-right button {
+  padding: 11px 22px;
+  border: 1px solid #813b55;
+  background: linear-gradient(135deg, #91465f, #713349);
+  color: #ffffff;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.transaction-right button:hover {
+  background: #642b40;
+  border-color: #642b40;
+  box-shadow: 0 6px 16px rgba(129, 59, 85, 0.18);
+  transform: translateY(-2px);
+}
+
+/* PAYMENT STATUS */
+
+.paid-status {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #813b55;
+  background: #f9e8ee;
+  border: 1px solid #efd5df;
+  border-radius: 25px;
+  padding: 8px 13px;
+}
+
+/* EMPTY PAYMENTS */
+
+.empty-payments {
+  background: linear-gradient(145deg, #ffffff, #fff5f8);
+  border: 1px solid #f0dfe5;
+  border-radius: 18px;
+  padding: 55px 25px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(94, 45, 64, 0.05);
+}
+
+.empty-payments h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 29px;
+  font-weight: 500;
+  color: #482b38;
+  margin: 0 0 14px;
+}
+
+.empty-payments p {
+  color: #806c75;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 760px) {
+  .payments-navbar {
+    min-height: 72px;
+    height: auto;
+    padding: 16px 5%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .payments-logo {
+    font-size: 24px;
+  }
+
+  .payments-nav-links {
+    gap: 14px 18px;
+  }
+
+  .payments-nav-links a {
+    font-size: 12px;
+  }
+
+  .payments-header {
+    padding: 55px 18px 48px;
+  }
+
+  .payments-header h1 {
+    font-size: 38px;
+  }
+
+  .pending-banner {
+    width: 90%;
+    padding: 22px;
+    margin-top: 24px;
+  }
+
+  .payments-container {
+    width: 90%;
+  }
+
+  .payment-summary-card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 17px;
+    padding: 23px;
+  }
+
+  .transaction-card {
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px;
+  }
+
+  .transaction-left h2 {
+    font-size: 21px;
+  }
+
+  .transaction-right h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payments-logo {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .payments-nav-links {
+    gap: 12px;
+  }
+
+  .payments-header h1 {
+    font-size: 32px;
+  }
+
+  .payments-header span {
+    font-size: 13px;
+  }
+
+  .pending-banner {
+    padding: 19px;
+  }
+
+  .pending-banner h2 {
+    font-size: 22px;
+  }
+
+  .payments-container {
+    width: 90%;
+  }
+
+  .payment-summary-card {
+    padding: 20px;
+  }
+
+  .payment-summary-card h2 {
+    font-size: 28px;
+  }
+
+  .transaction-card {
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .transaction-right {
+    width: 100%;
+    text-align: left;
+    padding-top: 15px;
+    border-top: 1px solid #f0e1e6;
+  }
+
+  .transaction-right h2 {
+    font-size: 23px;
+  }
+
+  .empty-payments {
+    padding: 40px 20px;
+  }
+
+  .empty-payments h2 {
+    font-size: 25px;
+  }
+}

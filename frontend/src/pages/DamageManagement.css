@@ -1,0 +1,185 @@
+.damage-page {
+  min-height: 100vh;
+  background: #fffafa;
+  color: #222;
+}
+
+.damage-navbar {
+  height: 75px;
+  padding: 0 7%;
+  background: white;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.damage-logo {
+  text-decoration: none;
+  color: #222;
+  font-family: Georgia, serif;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+
+.damage-nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.damage-nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.damage-header {
+  text-align: center;
+  padding: 70px 20px 40px;
+}
+
+.damage-header p {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #9b7777;
+}
+
+.damage-header h1 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  font-weight: normal;
+  margin: 12px 0;
+}
+
+.damage-header span {
+  color: #777;
+}
+
+.damage-container {
+  width: 86%;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 70px;
+}
+
+.damage-policy {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.damage-label,
+.damage-form-box label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #999;
+}
+
+.damage-rules {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.damage-rules div {
+  flex: 1;
+  padding: 18px;
+  background: #fff3f3;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.damage-rules span {
+  color: #9b7777;
+}
+
+.policy-note {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.damage-form-box {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 35px;
+}
+
+.damage-form-box h2 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.damage-form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.damage-form-box label {
+  margin: 15px 0 8px;
+}
+
+.damage-form-box input,
+.damage-form-box select,
+.damage-form-box textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+}
+
+.damage-form-box textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.points-display {
+  margin-top: 15px;
+  padding: 14px;
+  background: #fff0f0;
+  border-radius: 6px;
+  color: #8b5555;
+}
+
+.amount-note {
+  font-size: 12px;
+  color: #888;
+  margin-top: 8px;
+}
+
+.damage-form-box button {
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.damage-form-box button:hover {
+  background: #444;
+}
+
+@media (max-width: 700px) {
+  .damage-rules {
+    flex-direction: column;
+  }
+
+  .damage-header h1 {
+    font-size: 36px;
+  }
+
+  .damage-nav-links {
+    gap: 12px;
+  }
+}

@@ -1,0 +1,239 @@
+
+/* ==============================
+   MYFIT PREMIUM SERVICES
+   Blush Pink • Ivory • Rose
+============================== */
+
+.simple-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top left, #fff0f4 0%, transparent 35%),
+    #fff9fa;
+  color: #39252d;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.simple-navbar {
+  min-height: 82px;
+  padding: 16px 7%;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #f0dfe5;
+  box-shadow: 0 4px 20px rgba(104, 53, 72, 0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+}
+
+.simple-logo {
+  text-decoration: none;
+  color: #813b55;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  white-space: nowrap;
+}
+
+.simple-navbar div {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.simple-navbar a {
+  text-decoration: none;
+  color: #70535e;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.simple-navbar a:hover {
+  color: #b45d7b;
+}
+
+/* HEADER */
+
+.simple-header {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 76px 20px 68px;
+  background:
+    radial-gradient(ellipse at 15% 20%, rgba(255,255,255,0.8), transparent 38%),
+    radial-gradient(ellipse at 85% 85%, rgba(237,190,205,0.32), transparent 35%),
+    linear-gradient(135deg, #f9e6ec 0%, #fff1f4 52%, #f5dfe7 100%);
+  border-bottom: 1px solid #f1dce4;
+}
+
+.simple-header p {
+  color: #a65370;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+
+.simple-header h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1.2;
+  font-weight: 500;
+  color: #482b38;
+  margin: 12px 0 18px;
+}
+
+.simple-header span {
+  display: inline-block;
+  max-width: 650px;
+  color: #806571;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* SERVICES GRID */
+
+.service-grid {
+  width: 86%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 48px 0 85px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* SERVICE CARDS */
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff 0%, #fffafb 100%);
+  border: 1px solid #f0dfe5;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 8px 28px rgba(94, 45, 64, 0.05);
+  transition: transform 0.28s ease, box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #e8bdcd, #a65370, #e8bdcd);
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: #e6c2d0;
+  box-shadow: 0 16px 38px rgba(94, 45, 64, 0.09);
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-card h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #583447;
+  margin: 0 0 16px;
+}
+
+.service-card p {
+  color: #806c75;
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .simple-navbar {
+    padding: 15px 5%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .simple-logo {
+    font-size: 24px;
+  }
+
+  .simple-navbar div {
+    gap: 14px 18px;
+  }
+
+  .simple-navbar a {
+    font-size: 12px;
+  }
+
+  .simple-header {
+    padding: 58px 18px 50px;
+  }
+
+  .simple-header h1 {
+    font-size: 38px;
+  }
+
+  .service-grid {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 30px 0 55px;
+  }
+
+  .service-card {
+    padding: 28px;
+    border-radius: 16px;
+  }
+
+  .service-card h2 {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 420px) {
+  .simple-logo {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .simple-navbar div {
+    gap: 12px;
+  }
+
+  .simple-header h1 {
+    font-size: 32px;
+  }
+
+  .simple-header span {
+    font-size: 13px;
+  }
+
+  .service-card {
+    padding: 23px;
+  }
+
+  .service-card h2 {
+    font-size: 21px;
+  }
+
+  .service-card p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,215 @@
+
+/* ===== PREMIUM MYFIT LOGIN & SIGNUP ===== */
+
+.auth-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 20px;
+  background:
+    radial-gradient(circle at top left, #f8dce5 0%, transparent 38%),
+    radial-gradient(circle at bottom right, #f2c6d5 0%, transparent 35%),
+    linear-gradient(135deg, #fffaf8 0%, #fbeaf0 50%, #fff7f5 100%);
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 440px;
+  padding: 44px 38px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(202, 111, 143, 0.2);
+  border-radius: 26px;
+  box-shadow: 0 18px 55px rgba(117, 55, 77, 0.13);
+  box-sizing: border-box;
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+
+.auth-logo {
+  margin-bottom: 10px;
+  color: #a83e63;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.auth-small {
+  margin: 0 0 28px;
+  color: #9c6477;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.auth-box h1 {
+  margin: 0 0 12px;
+  color: #422532;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.auth-text {
+  margin: 0 0 28px;
+  color: #8b747d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  text-align: left;
+}
+
+.auth-box label {
+  display: block;
+  margin-bottom: 7px;
+  color: #563746;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.auth-box input {
+  width: 100%;
+  min-height: 49px;
+  padding: 13px 15px;
+  border: 1px solid #ead5dd;
+  border-radius: 12px;
+  outline: none;
+  background: #fffafb;
+  color: #422532;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.auth-box input::placeholder {
+  color: #b7a0a9;
+}
+
+.auth-box input:focus {
+  border-color: #c45b80;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(196, 91, 128, 0.12);
+}
+
+.auth-box button {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 7px;
+  border: none;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #bd5279, #963553);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(150, 53, 83, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+
+.auth-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(150, 53, 83, 0.3);
+  filter: brightness(1.04);
+}
+
+.auth-box button:active {
+  transform: translateY(0);
+}
+
+.auth-box button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.auth-bottom {
+  margin-top: 25px;
+  color: #826c75;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.auth-bottom a {
+  color: #ad4268;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.auth-bottom a:hover {
+  color: #7d2948;
+  text-decoration: underline;
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 22px;
+  color: #9b526b;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-home:hover {
+  color: #70243f;
+}
+
+.auth-box .error-message {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid #f0c4cc;
+  border-radius: 10px;
+  background: #fff0f2;
+  color: #a52f48;
+  font-size: 13px;
+}
+
+.auth-box .success-message {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid #c7e8d2;
+  border-radius: 10px;
+  background: #f0fff4;
+  color: #287346;
+  font-size: 13px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 480px) {
+  .auth-page {
+    padding: 22px 14px;
+  }
+
+  .auth-box {
+    padding: 34px 23px;
+    border-radius: 21px;
+  }
+
+  .auth-logo {
+    font-size: 29px;
+  }
+
+  .auth-box h1 {
+    font-size: 26px;
+  }
+
+  .auth-text {
+    font-size: 13px;
+  }
+}
